@@ -1,0 +1,61 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #003c96, rgb(0, 0, 0));
+}
+
+.calculator-grill {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 90vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 90px);
+}
+
+.calculator-grill > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+}
+
+button.mathematic-operators {
+    background-color: rgba(192, 192, 192, .75);
+}
+button.mathematic-operators-result {
+    background-color: rgba(24, 24, 24, 0.75);
+    color: white;
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output .display {
+    color: black;
+    font-size: 1.85rem;
+    text-align: right;
+}
+
+.calculator-grill > button:hover {
+    background-color: rgba(255, 255, 255, .9);
+}
+
+.credits {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    font-style: italic;
+    font-weight: 500;
+}
