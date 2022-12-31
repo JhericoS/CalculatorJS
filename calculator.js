@@ -96,7 +96,7 @@ function calculate(){
             break;
         case '^':
             var j = previous;
-            for(i = 1; i< current; i++) {
+            for(i = 1; i < current; i++) {
                 j *= previous;
             };
             calculation = j;   

@@ -2,6 +2,7 @@ body {
     padding: 0;
     margin: 0;
     background: linear-gradient(to right, #003c96, rgb(0, 0, 0));
+    min-height: 100vh;
 }
 
 .calculator-grill {
@@ -10,7 +11,7 @@ body {
     align-content: center;
     min-height: 90vh;
     grid-template-columns: repeat(4, 100px);
-    grid-template-rows: minmax(120px, auto) repeat(5, 90px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
 
 .calculator-grill > button {
@@ -38,7 +39,7 @@ button.mathematic-operators-result {
     flex-direction: column;
     padding: 10px;
     word-wrap: break-word;
-    word-break: break-all;
+    word-break: break-all; 
 }
 
 .output .display {
@@ -53,6 +54,7 @@ button.mathematic-operators-result {
 
 .credits {
     display: grid;
+    min-height: 5vh;
     justify-content: center;
     align-content: center;
     color: white;
